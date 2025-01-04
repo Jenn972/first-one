@@ -36,3 +36,17 @@
 - Maintain clear separation between agent types
 - Document all AI training parameters
 - Keep security as a top priority
+
+## Build and Deployment Notes
+- When building on Windows, you may need administrator privileges to handle .next directory operations
+- Run command prompt as administrator if you encounter EPERM errors during build
+- Run command prompt as administrator if you encounter EPERM errors during build
+- ESLint warning about Next.js plugin can be safely ignored during build if using custom ESLint configuration
+- Vercel deployment automatically handles Next.js configuration and environment setup
+- If production deployment fails, try development deployment first:
+  1. `vercel link --yes` to link project
+  2. `vercel deploy --yes` for development deployment
+  3. Once confirmed working, use `vercel deploy --prod --yes` for production
+- ESLint configuration requires careful version management:
+  - Use ESLint 8.x for compatibility with Next.js 15
+  - Force install dependencies if peer dependency conflicts occur

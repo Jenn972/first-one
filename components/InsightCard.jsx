@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { fadeIn } from '../utils/motion';
+import Link from 'next/link';
 
 const InsightCard = ({ index, imgUrl, title, subtitle }) => (
   <motion.div
@@ -16,7 +17,9 @@ const InsightCard = ({ index, imgUrl, title, subtitle }) => (
       </div>
 
       <div className="lg:flex hidden items-center justify-center w-[100px] h-[100px] rounded-full bg-transparent border-[1px] border-white">
-        <img src="arrow.svg" alt="arrow" className="w-[40%] h-[40%] object-contain" />
+        <Link href="/documentation">
+          <img src="arrow.svg" alt="arrow" className="w-[100%] h-[100%] object-contain" />
+        </Link>
       </div>
     </div>
   </motion.div>

@@ -16,10 +16,10 @@ const Insights = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
-      <TypingText title="| Insights" textStyles="text-center" />
-      <TitleText title="Telegram Agents AI" textStyles="text-center" />
+      <TypingText title="| Extension marketplace" textStyles="text-center" />
+      <TitleText title="Deploy custom Agents" textStyles="text-center" />
 
-      <div className="mt-[50px] flex flex-col gap-[30px]">
+      <div className="mt-[150px] flex flex-col gap-[30px]">
         {insights.map((insight, i) => (
           <InsightCard
             key={`Insight-${i + 1}`}

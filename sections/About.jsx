@@ -25,7 +25,7 @@ const About = () => (
         variants={fadeIn('up', 'tween', 0.2, 1)}
         className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
       >
-        <span className="font-extrabold">TELEGRAM AGENTS AI</span> is an innovative fork of the official Telegram client that brings intelligent automation to your messaging experience. Choose from our three powerful pre-built agents for auto-responses, message filtering, and custom AI interactions. With our native token system, you can train personalized AI agents tailored to your specific needs, enabling advanced features like smart message routing, automated responses, and intelligent filtering.
+        <span className="font-extrabold">TELEGRAM AGENTS AI</span> is an innovative fork of the official open source Telegram client that brings intelligent automation to your messaging experience. Choose from our three powerful pre-built agents for auto-responses, message filtering, and custom AI interactions. Using native token system, you can train yoour own AI agents, tailored to your specific needs, enabling advanced features like smart message routing, automated responses, intelligent filtering and more as the platform grows.
 
       </motion.p>
 

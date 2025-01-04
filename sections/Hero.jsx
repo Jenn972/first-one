@@ -18,13 +18,13 @@ const Hero = () => (
           variants={textVariant(1.1)}
           className={styles.heroHeading}
         >
-          AUTOMATE
+        AGENTS
         </motion.h1>
         <motion.div
           variants={textVariant(1.2)}
           className="flex flex-row items-center justify-center"
         >
-          <h1 className={styles.heroHeading}>TELEGRAM</h1>
+          <h1 className={styles.heroHeading}>On Telegram</h1>
           {/* <div className={styles.heroAIText} /> */}
           <h1 className={styles.heroHeading}></h1>
         </motion.div>
@@ -41,14 +41,23 @@ const Hero = () => (
           className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative"
         />
 
-        <a href="#explore">
+        <a href="https://app.tgaigent.com">
           <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px] relative z-10 2xl:-ml-[100px]">
             <motion.img
-              src="/gear.svg"
-              alt="stamp"
-              className="sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain "
-              animate={{ rotate: 360 }}
-              transition={{ repeat: Infinity, duration: 7, repeatType: 'loop' }}
+              src="/rocket.svg"
+              alt="rocket"
+              className="sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain rounded-full bg-green-400 p-5 transition-all duration-300 ease-in-out cursor-pointer"
+              initial={{ scale: 1, color: 'green' }}
+              animate={{ scale: 1.05 }}
+              whileHover={{
+                type: "spring",
+                stiffness: 260,
+                damping: 20,
+                scale: 1.2,
+                color: 'green-600',
+                boxShadow: '0 0 10px rgba(0,255,0,0.5)'
+              }}
+          
             />
           </div>
         </a>
